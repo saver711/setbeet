@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ست بيت - الوصفات</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="../assets/icons/flaticon.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images//icon-32.png">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="../assets/images/icon-16.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/images//icon-32.ico">
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="container">
+        <nav class="nav">
+            <a href="../index.html" class="nav__logo"><img src="../assets/images/whole-logo.png" alt=""></a>
+
+            <div class="poster-nav poster-container__poster"></div>
+
+            <div class="nav__blocks">
+                <span class="nav__block nav__humburger">
+                    <span class="flaticon-menu flaticon"></span>
+                </span>
+                <span class="nav__block nav__search">
+                    <span class="flaticon-loupe flaticon"></span>
+                </span>
+                <a href="account.html" class="nav__block">
+                    <span class="flaticon-person-male-shape flaticon"></span>
+                </a>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- subNav -->
+    <div class="subNav sec-back">
+        <ul class="subNav__list">
+            <li class="subNav__item"><a href="../index.html">الرئيسية</a></li>
+            <li class="subNav__item active"><a href="#">الوصفات</a></li>
+            <li class="subNav__item subMenu-parent">
+                <div>
+                    <span>
+                        قائمة منسدلة
+                    </span>
+                    <span class="flaticon-arrow-down-sign-to-navigate flaticon"></span>                </div>
+
+                <ul class="subMenu">
+                    <li class="subMenu__item"><a href="">الصفحة 1</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 2</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 3</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 4</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 5</a></li>
+                    <li class="subMenu__item">الصفحة 6</li>
+                </ul>
+            </li>
+
+            <li class="subNav__item"><a href="fav.html">التفضيلات</a></li>
+            <li class="subNav__item"><a href="diet.html">الريجيم</a></li>
+            <li class="subNav__item"><a href="news.html">الأخبار</a></li>
+            <li class="subNav__item"><a href="advices.html">نصائح ومقالات</a></li>
+        </ul>
+    </div>
+
+    <!-- search -->
+    <div class="search-container my-d-none">
+        <div class="container">
+            <div class="search">
+                <span class="flaticon-close flaticon search__close"></span>
+                <form action="">
+                    <input class="search__field" type="search" required placeholder="ابحث عن وصفة, خبر, مقال,...">
+                    <input type="submit" value="أبحث" class="search__submit main-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- recipes -->
+    <section class="recipes-container sec-padd">
+        <div class="container-fluid">
+            <div class="recipes">
+                <div class="customT">
+                    <p class="customT__subTitle">تصنيف الوصفات</p>
+                </div>
+
+                <div class="recipes__table">
+                    <div class="recipes__main">
+                        <div class="recipes__categories">
+                            <span class="recipes__category active" data-select=".varieties">الأصناف</span>
+                            <span class="recipes__category" data-select=".countries">الدول</span>
+                        </div>
+
+                        <div class="recipes__cards">
+                            <div class="varieties">
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">السندوتشات</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأرز</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الحساء</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الخضروات</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">اللحوم</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">اللحوم</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">اللحوم</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">اللحوم</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-category.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">الأسماك</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+                            </div>
+
+                            <div class="countries my-d-none">
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/italy-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات ايطالية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                    <div class="recipe-card-container col-sm-6 col-lg-3"><a href="recipes-country.html" class="recipes__card recipe-card">
+                                        <div class="recipe-card__inside">
+                                    <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/egypt-flag.png)">
+    
+                                    </div>
+                                    <div class="recipe-card__content">
+                                        <p class="recipe-card__title">وصفات مصرية</p>
+                                        
+                                        <div class="recipe-card__icons">
+                                            <div class="recipe-card__icon">
+                                                <span class="flaticon-fork flaticon"></span>
+                                                <p>37 وصفة</p>
+                                            </div>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="recipes__side">
+                        <h4 class="recipes__side--title">نصائح ومقالات ذات صلة</h4>
+                        <div class="recipes__side--blocks">
+                            <a href="article.html" class="recipes__side--block">
+                                <div class="recipes__side--img backgrounedImg" style="background-image: url(../assets/images/side1.png);">
+                                    
+                                </div>
+
+                                <p class="recipes__side--content">
+                                    هل يمكن أن أحمل وأنا أقوم بالرضاعة الطبيعية؟
+                                </p>
+                            </a>
+
+                            <a href="article.html" class="recipes__side--block">
+                                <div class="recipes__side--img backgrounedImg" style="background-image: url(../assets/images/side1.png);">
+                                    
+                                </div>
+
+                                <p class="recipes__side--content">
+                                    هل يمكن أن أحمل وأنا أقوم بالرضاعة الطبيعية؟
+                                </p>
+                            </a>
+
+                            <a href="article.html" class="recipes__side--block">
+                                <div class="recipes__side--img backgrounedImg" style="background-image: url(../assets/images/side1.png);">
+                                    
+                                </div>
+
+                                <p class="recipes__side--content">
+                                    هل يمكن أن أحمل وأنا أقوم بالرضاعة الطبيعية؟
+                                </p>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <li class="footer__item footer__facebook">
+                        <a href=""><span class="flaticon-facebook flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__twitter">
+                        <a href=""><span class="flaticon-twitter flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__instagram">
+                        <a href=""><span class="flaticon-instagram flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__youtube">
+                        <a href=""><span class="flaticon-youtube flaticon"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- external js -->
+    <script src="../js/jquery-3.5.1.js"></script>
+
+    <!-- my js -->
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".my-isotope").isotope({itemSelector:".recipe-card-container",layoutMode:"fitRows",isOriginLeft:!1}),$(".recipes__category").on("click",function(){$(this).addClass("active"),$(this).siblings(".recipes__category").removeClass("active");var e=$(this).data("filter");return $(".my-isotope").isotope({filter:e}),!1})});

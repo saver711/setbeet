@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ست بيت - مقالات عن المطبخ</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../css/account.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="../assets/icons/flaticon.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images//icon-32.png">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="../assets/images/icon-16.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/images//icon-32.ico">
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="container">
+        <nav class="nav">
+            <a href="../index.html" class="nav__logo"><img src="../assets/images/whole-logo.png" alt=""></a>
+
+            <div class="poster-nav poster-container__poster"></div>
+
+            <div class="nav__blocks">
+                <span class="nav__block nav__humburger">
+                    <span class="flaticon-menu flaticon"></span>
+                </span>
+                <span class="nav__block nav__search">
+                    <span class="flaticon-loupe flaticon"></span>
+                </span>
+                <span class="nav__block nav__side">
+                    <span class="flaticon-left-align flaticon"></span>
+                </span>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- subNav -->
+    <div class="subNav sec-back">
+        <ul class="subNav__list">
+            <li class="subNav__item"><a href="../index.html">الرئيسية</a></li>
+            <li class="subNav__item"><a href="recipes.html">الوصفات</a></li>
+            <li class="subNav__item subMenu-parent">
+                <div>
+                    <span>
+                        قائمة منسدلة
+                    </span>
+                    <span class="flaticon-arrow-down-sign-to-navigate flaticon"></span>
+                </div>
+
+                <ul class="subMenu">
+                    <li class="subMenu__item"><div>الصفحة 1</div></li>
+                    <li class="subMenu__item"><div>الصفحة 2</div></li>
+                    <li class="subMenu__item"><div>الصفحة 3</div></li>
+                    <li class="subMenu__item"><div>الصفحة 4</div></li>
+                    <li class="subMenu__item"><div>الصفحة 5</div></li>
+                    <li class="subMenu__item">الصفحة 6</li>
+                </ul>
+            </li>
+
+            <li class="subNav__item"><a href="fav.html">التفضيلات</a></li>
+            <li class="subNav__item"><a href="diet.html">الريجيم</a></li>
+            <li class="subNav__item"><a href="news.html">الأخبار</a></li>
+            <li class="subNav__item"><a href="advices.html">نصائح ومقالات</a></li>
+        </ul>
+    </div>
+
+    <!-- search -->
+    <div class="search-container my-d-none">
+        <div class="container">
+            <div class="search">
+                <span class="flaticon-close flaticon search__close"></span>
+                <form action="">
+                    <input class="search__field" type="search" required placeholder="ابحث عن وصفة, خبر, مقال,...">
+                    <input type="submit" value="أبحث" class="search__submit main-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <aside class="sidePanel">
+        <div class="sidePanel__header">
+            <div class="sidePanel__img">
+                <img src="../assets/images/person.png" alt="">
+            </div>
+
+            <h4 class="sidePanel__name">أحمد أحمد</h4>
+        </div>
+
+        <ul class="sidePanel__list">
+            <li class="sidePanel__item active" data-select=".posts">
+                <span class="flaticon-social-media flat flaticon"></span>
+                منشوراتي
+            </li>
+            <li class="sidePanel__item" data-select=".settings">
+                <span class="flaticon-settings flat flaticon"></span>
+                الاعدادات
+            </li>
+        </ul>
+
+        <span class="sidePanel__logout">
+            <span class="flaticon-logout flat flaticon"></span>
+            تسجيل الخروج
+        </span>
+
+        <span class="flaticon-close flaticon sidePanel__close"></span>
+        
+    </aside>
+
+    <!-- my posts -->
+    <div class="posts">
+        <div class="container">
+            <div class="recipes__categories">
+                <span class="recipes__category active" data-filter=".all">الكل</span>
+                <span class="recipes__category" data-filter=".recipes">الوصفات</span>
+                <span class="recipes__category" data-filter=".diet">الريجيم</span>
+            </div>
+            <div class="row my-isotope">
+                <div class="col-sm-6 col-lg-3 recipe-card-container all recipes">
+                    <a href="pages/recipe.html" class="recipe-card">
+                        <div class="recipe-card__inside">
+                            <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+
+                            </div>
+                            <div class="recipe-card__content">
+                                <p class="recipe-card__title enhancedText">الفراخ المشوية</p>
+                                <p class="recipe-card__sub">وصفة مصرية</p>
+                                <ul class="recipe-card__stars">
+                                    <li class="recipe-card__star selected" data-value='1'>
+                                        <span class="flaticon-star-sign flaticon"></span>
+                                    </li>
+
+                                    <li class="recipe-card__star selected" data-value='2'>
+                                        <span class="flaticon-star-sign flaticon"></span>
+                                    </li>
+
+                                    <li class="recipe-card__star selected" data-value='3'>
+                                        <span class="flaticon-star-sign flaticon"></span>
+                                    </li>
+
+                                    <li class="recipe-card__star" data-value='4'>
+                                        <span class="flaticon-star-sign flaticon"></span>
+                                    </li>
+
+                                    <li class="recipe-card__star" data-value='5'>
+                                        <span class="flaticon-star-sign flaticon"></span>
+                                    </li>
+                                </ul>
+                                <div class="recipe-card__icons">
+                                    <div class="recipe-card__icon">
+                                        <span class="flaticon-eye flaticon"></span>
+                                        <p>354</p>
+                                    </div>
+
+                                    <div class="recipe-card__icon">
+                                        <span class="flaticon-clock flaticon"></span>
+                                        <p>23 دقيقة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <span class="flaticon-loupe flaticon heart"></span> -->
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 recipe-card-container all diet">
+                    <a href="pages/recipe.html" class="recipe-card">
+                            <div class="recipe-card__inside">
+                                <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+
+                                </div>
+                                <div class="recipe-card__content">
+                                    <p class="recipe-card__title enhancedText">الفراخ المشوية</p>
+                                    <p class="recipe-card__sub">وصفة مصرية</p>
+                                    <ul class="recipe-card__stars">
+                                        <li class="recipe-card__star selected" data-value='1'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star selected" data-value='2'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star selected" data-value='3'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star" data-value='4'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star" data-value='5'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+                                    </ul>
+                                    <div class="recipe-card__icons">
+                                        <div class="recipe-card__icon">
+                                            <span class="flaticon-eye flaticon"></span>
+                                            <p>354</p>
+                                        </div>
+
+                                        <div class="recipe-card__icon">
+                                            <span class="flaticon-clock flaticon"></span>
+                                            <p>23 دقيقة</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <span class="flaticon-loupe flaticon heart"></span> -->
+                        </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 recipe-card-container all recipes">
+                    <a href="pages/recipe.html" class="recipe-card">
+                            <div class="recipe-card__inside">
+                                <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+
+                                </div>
+                                <div class="recipe-card__content">
+                                    <p class="recipe-card__title enhancedText">الفراخ المشوية</p>
+                                    <p class="recipe-card__sub">وصفة مصرية</p>
+                                    <ul class="recipe-card__stars">
+                                        <li class="recipe-card__star selected" data-value='1'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star selected" data-value='2'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star selected" data-value='3'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star" data-value='4'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star" data-value='5'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+                                    </ul>
+                                    <div class="recipe-card__icons">
+                                        <div class="recipe-card__icon">
+                                            <span class="flaticon-eye flaticon"></span>
+                                            <p>354</p>
+                                        </div>
+
+                                        <div class="recipe-card__icon">
+                                            <span class="flaticon-clock flaticon"></span>
+                                            <p>23 دقيقة</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <span class="flaticon-loupe flaticon heart"></span> -->
+                        </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 recipe-card-container all diet">
+                    <a href="pages/recipe.html" class="recipe-card">
+                            <div class="recipe-card__inside">
+                                <div class="recipe-card__img backgrounedImg" style="background-image:url(../assets/images/viewed1.png)">
+
+                                </div>
+                                <div class="recipe-card__content">
+                                    <p class="recipe-card__title enhancedText">الفراخ المشوية</p>
+                                    <p class="recipe-card__sub">وصفة مصرية</p>
+                                    <ul class="recipe-card__stars">
+                                        <li class="recipe-card__star selected" data-value='1'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star selected" data-value='2'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star selected" data-value='3'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star" data-value='4'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+
+                                        <li class="recipe-card__star" data-value='5'>
+                                            <span class="flaticon-star-sign flaticon"></span>
+                                        </li>
+                                    </ul>
+                                    <div class="recipe-card__icons">
+                                        <div class="recipe-card__icon">
+                                            <span class="flaticon-eye flaticon"></span>
+                                            <p>354</p>
+                                        </div>
+
+                                        <div class="recipe-card__icon">
+                                            <span class="flaticon-clock flaticon"></span>
+                                            <p>23 دقيقة</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <span class="flaticon-loupe flaticon heart"></span> -->
+                        </a>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- my settings -->
+    <div class="settings sec-back my-d-none">
+        <div class="container">
+            <div class="row">
+                <div class="order-2 order-md-1 col-md-8">
+                    <div class="settings__inputs">
+                        <form action="" class="form">
+                            <div class="form__right">
+                                <label for="name">الاسم بالكامل :</label>
+                                <input type="text" id="name" value="أحمد أحمد" placeholder="الاسم الجديد">
+
+                                <label for="user_name">اسم المستخدم :</label>
+                                <input type="text" id="user_name" value="ahmedhassan713" placeholder="اسم مستخدم جديد">
+
+                                <label for="email">البريد الالكتروني :</label>
+                                <input type="email" id="email" value="zoomgoo713@gmail.com" placeholder="تعديل البريد الالكتروني">
+                            </div>
+
+                            <div class="form__left">
+                                <label for="phone">رقم الهاتف :</label>
+                                <input type="text" id="phone" value="01126183678" placeholder="تعديل رقم الهاتف">
+
+                                <label for="password">كلمة السر الجديدة :</label>
+                                <input type="password" id="password" placeholder="اترك الحقل فارغ ان لم ترد التغيير">
+
+                                <label for="password">تأكيد كلمة السر :</label>
+                                <input type="password" id="password" placeholder="اترك الحقل فارغ ان لم ترد التغيير">
+
+
+                            </div>
+                            <input type="submit" value="تعديل" class="form__submit">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="order-1 order-md-2 col-md-4">
+                    <div class="settings__left">
+                        <div class="settings__img">
+                            <img src="../assets/images/person.png" alt="">
+                        </div>
+
+                        <h4 class="settings__name">أحمد أحمد</h4>
+
+                        <form action="">
+                            <label for="change_photo">
+                                <span class="flaticon-camera flaticon"></span>
+                            </label>
+                            <input type="file" id="change_photo" accept="image/x-png,image/gif,image/jpeg" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <li class="footer__item footer__facebook">
+                        <a href="#"><span class="flaticon-facebook flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__twitter">
+                        <a href="#"><span class="flaticon-twitter flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__instagram">
+                        <a href="#"><span class="flaticon-instagram flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__youtube">
+                        <a href="#"><span class="flaticon-youtube flaticon"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- external js -->
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/isotope.pkgd.js"></script>
+    <!-- my js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/isotopes.js"></script>
+</body>
+
+</html>

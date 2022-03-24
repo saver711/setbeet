@@ -1,0 +1,50 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 05/11/2020 15:39
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-close:before { content: "\f100"; }
+.flaticon-eye:before { content: "\f101"; }
+.flaticon-clock:before { content: "\f102"; }
+.flaticon-diet:before { content: "\f103"; }
+.flaticon-vegan-food:before { content: "\f104"; }
+.flaticon-article:before { content: "\f105"; }
+.flaticon-newspaper:before { content: "\f106"; }
+.flaticon-facebook:before { content: "\f107"; }
+.flaticon-twitter:before { content: "\f108"; }
+.flaticon-instagram:before { content: "\f109"; }
+.flaticon-youtube:before { content: "\f10a"; }
+.flaticon-heart-shaped-with-white-lining-detail:before { content: "\f10b"; }
+.flaticon-star-sign:before { content: "\f10c"; }
+.flaticon-menu:before { content: "\f10d"; }
+.flaticon-loupe:before { content: "\f10e"; }
+.flaticon-person-male-shape:before { content: "\f10f"; }
+.flaticon-fork:before { content: "\f110"; }
+.flaticon-arrow-down-sign-to-navigate:before { content: "\f111"; }
+.flaticon-writing:before { content: "\f112"; }
+.flaticon-tag:before { content: "\f113"; }
+.flaticon-left-align:before { content: "\f114"; }
+.flaticon-social-media:before { content: "\f115"; }
+.flaticon-settings:before { content: "\f116"; }
+.flaticon-logout:before { content: "\f117"; }
+.flaticon-camera:before { content: "\f118"; }
+.flaticon-google:before { content: "\f119"; }
+.flaticon-telegram:before { content: "\f11a"; }
+.flaticon-whatsapp:before { content: "\f11b"; }

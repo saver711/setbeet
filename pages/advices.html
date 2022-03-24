@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ست بيت - نصائح ومقالات</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/news.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="../assets/icons/flaticon.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images//icon-32.png">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="../assets/images/icon-16.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/images//icon-32.ico">
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="container">
+        <nav class="nav">
+            <a href="../index.html" class="nav__logo"><img src="../assets/images/whole-logo.png" alt=""></a>
+
+            <div class="poster-nav poster-container__poster"></div>
+
+            <div class="nav__blocks">
+                <span class="nav__block nav__humburger">
+                    <span class="flaticon-menu flaticon"></span>
+                </span>
+                <span class="nav__block nav__search">
+                    <span class="flaticon-loupe flaticon"></span>
+                </span>
+                <a href="account.html" class="nav__block">
+                    <span class="flaticon-person-male-shape flaticon"></span>
+                </a>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- subNav -->
+    <div class="subNav sec-back">
+        <ul class="subNav__list">
+            <li class="subNav__item"><a href="../index.html">الرئيسية</a></li>
+            <li class="subNav__item"><a href="recipes.html">الوصفات</a></li>
+            <li class="subNav__item subMenu-parent">
+                <div>
+                    <span>
+                        قائمة منسدلة
+                    </span>
+                    <span class="flaticon-arrow-down-sign-to-navigate flaticon"></span>                </div>
+
+                <ul class="subMenu">
+                    <li class="subMenu__item"><div>الصفحة 1</div></li>
+                    <li class="subMenu__item"><div>الصفحة 2</div></li>
+                    <li class="subMenu__item"><div>الصفحة 3</div></li>
+                    <li class="subMenu__item"><div>الصفحة 4</div></li>
+                    <li class="subMenu__item"><div>الصفحة 5</div></li>
+                    <li class="subMenu__item">الصفحة 6</li>
+                </ul>
+            </li>
+
+            <li class="subNav__item"><a href="fav.html">التفضيلات</a></li>
+            <li class="subNav__item"><a href="diet.html">الريجيم</a></li>
+            <li class="subNav__item"><a href="news.html">الأخبار</a></li>
+            <li class="subNav__item active"><a href="advices.html">نصائح ومقالات</a></li>
+        </ul>
+    </div>
+
+    <!-- search -->
+    <div class="search-container my-d-none">
+        <div class="container">
+            <div class="search">
+                <span class="flaticon-close flaticon search__close"></span>
+                <form action="">
+                    <input class="search__field" type="search" required placeholder="ابحث عن وصفة, خبر, مقال,...">
+                    <input type="submit" value="أبحث" class="search__submit main-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- news-container -->
+    <div class="news-container sec-padd">
+
+        <div class="container-fluid news-slider-container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="poster-container">
+                        <div class="poster-header poster-container__poster"></div>
+                    </div>
+                </div>
+                <div class="col-6 nSlider">
+                    <div class="nSlider__top">
+                        <div class="nSlider__container">
+
+                            <div class="nSlider__news nSlider__news-5 backgrounedImg"
+                                style="background-image: url(../assets/images/news13.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار ريادة الأعمال</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-6 backgrounedImg"
+                                style="background-image: url(../assets/images/news12.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار الفن والترفيه</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-7 backgrounedImg"
+                                style="background-image: url(../assets/images/news5.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار الصحة</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-8 backgrounedImg"
+                                style="background-image: url(../assets/images/news11.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار عامة</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-9 backgrounedImg"
+                                style="background-image: url(../assets/images/news10.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار سياسية</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-10 backgrounedImg"
+                                style="background-image: url(../assets/images/news9.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار المجتمع</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-11 backgrounedImg"
+                                style="background-image: url(../assets/images/news8.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار الرياضة</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-12 backgrounedImg"
+                                style="background-image: url(../assets/images/news7.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار الصحة والجمال</a>
+                                </div>
+                            </div>
+                            <div class="nSlider__news my-d-none nSlider__news-13 backgrounedImg"
+                                style="background-image: url(../assets/images/news6.jpg);">
+                                <div class="nSlider__text">
+                                    <h4 class="nSlider__title">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني
+                                        لعام 2020</h4>
+                                    <p class="nSlider__subTitle">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب
+                                        رئيس الدولة رئيس مجلس الوزراء</p>
+                                    <a href="advices-category.html" class="main-btn">أخبار المطبخ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nSlider__bottom news-slider mySlider arrows-enabled">
+                        <!-- هنا صورة احدث خبر في الصحه مثلا وهكذا -->
+                        <li class="nSlider__item backgrounedImg active"
+                            style="background-image: url(../assets/images/news13.jpg);" data-chosen=".nSlider__news-5">
+                            <span>ريادة أعمال</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news12.jpg);" data-chosen=".nSlider__news-6">
+                            <span>فن وترفيه</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news5.jpg);" data-chosen=".nSlider__news-7">
+                            <span>الصحة</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news11.jpg);" data-chosen=".nSlider__news-8">
+                            <span>أخبار عامة</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news10.jpg);" data-chosen=".nSlider__news-9">
+                            <span>سياسة</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news9.jpg);" data-chosen=".nSlider__news-10">
+                            <span>المجتمع</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news8.jpg);" data-chosen=".nSlider__news-11">
+                            <span>رياضة</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news7.jpg);" data-chosen=".nSlider__news-12">
+                            <span>صحة وجمال</span>
+
+                        </li>
+
+                        <li class="nSlider__item backgrounedImg"
+                            style="background-image: url(../assets/images/news6.jpg);" data-chosen=".nSlider__news-13">
+                            <span>المطبخ</span>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="poster-container">
+                        <div class="poster-header poster-container__poster"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- news section -->
+    <section class="nSection sec-padd sec-back nSection-shape2">
+        
+        <div class="container">
+            <!-- news head title -->
+            <div class="nHead">
+                <a href="advices-category.html" class="nHead__title">أخبار المطبخ</a>
+            </div>
+
+            <div class="row">
+                <div class="col-12 order-2 order-md-3 col-lg-3 order-lg-1">
+                    <div class="nSection-shape2__middle">
+                        <a href="article.html" class="lCard">
+                            <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+    
+                            <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+    
+                            <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+    
+                        </a>
+    
+                        <a href="article.html" class="lCard">
+                            <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+    
+                            <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+    
+                            <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+    
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 order-1 order-md-1 col-md-7 col-lg-6 order-lg-2">
+                    <a href="article.html" class="xxlCard backgrounedImg" style="background-image: url(../assets/images/xxlCard.jpg);">
+
+                        <div class="xxlCard__content">
+                            <h2 class="xxlCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h2>
+
+                            <p class="xxlCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+
+                    </a>
+                    
+                </div>
+                <div class="col-12 order-3 order-md-2 col-md-5 col-lg-3">
+                    <a href="article.html" class="sCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/sCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <a href="article.html" class="sCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/sCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <a href="article.html" class="sCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/sCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <div class="nMore">
+                        <a href="advices-category.html">أخبار المطبخ
+                            <span class="nMore__right"></span>
+                        <span class="nMore__left"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- news section -->
+    <section class="nSection sec-padd">
+        
+        <div class="container">
+            <!-- news head title -->
+            <div class="nHead">
+                <a href="advices-category.html" class="nHead__title">الأخبار السياسية</a>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <a href="article.html" class="xxlCard xxxlCard backgrounedImg" style="background-image: url(../assets/images/xxxlCard.jpg);">
+
+                        <div class="xxlCard__content">
+                            <h2 class="xxlCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h2>
+
+                            <p class="xxlCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="article.html" class="xxlCard xxxlCard backgrounedImg" style="background-image: url(../assets/images/xxxlCard.jpg);">
+
+                        <div class="xxlCard__content">
+                            <h2 class="xxlCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h2>
+
+                            <p class="xxlCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="article.html" class="lCard">
+                        <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+
+                        <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+
+                        <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="article.html" class="lCard">
+                        <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+
+                        <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+
+                        <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="article.html" class="lCard">
+                        <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+
+                        <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+
+                        <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="article.html" class="lCard">
+                        <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+
+                        <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+
+                        <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="nMore">
+                <a href="advices-category.html">الأخبار السياسية
+                    <span class="nMore__right"></span>
+                <span class="nMore__left"></span>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- news section -->
+    <section class="nSection nSection-shape1 sec-padd sec-back">
+        
+        <div class="container">
+            <!-- news head title -->
+            <div class="nHead">
+                <a href="advices-category.html" class="nHead__title">أخبار ريادة الأعمال</a>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-7 col-lg-6 order-1">
+                    <a href="article.html" class="xxlCard backgrounedImg" style="background-image: url(../assets/images/xxlCard.jpg);">
+
+                        <div class="xxlCard__content">
+                            <h2 class="xxlCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h2>
+
+                            <p class="xxlCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-12 col-lg-3 order-2 order-md-3 order-lg-2">
+                    <div class="nSection-shape1__middle">
+                        <a href="article.html" class="lCard">
+                            <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+    
+                            <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+    
+                            <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+    
+                        </a>
+    
+                        <a href="article.html" class="lCard">
+                            <div class="lCard__img backgrounedImg" style="background-image: url(../assets/images/lCard.jpg);"></div>
+    
+                            <h4 class="lCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h4>
+    
+                            <p class="lCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+    
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3 order-3 order-md-2 order-lg-3">
+                    <a href="article.html" class="sCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/sCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">1هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <a href="article.html" class="sCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/sCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <a href="article.html" class="sCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/sCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <div class="nMore">
+                        <a href="advices-category.html">أخبار ريادة الأعمال
+                            <span class="nMore__right"></span>
+                        <span class="nMore__left"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- news section -->
+    <section class="nSection sec-padd">
+        <div class="container">
+            <!-- news head title -->
+            <div class="nHead">
+                <a href="advices-category.html" class="nHead__title">أخبار الصحة والجمال</a>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <a href="article.html" class="xxlCard xxxlCard backgrounedImg" style="background-image: url(../assets/images/xxxlCard.jpg);">
+
+                        <div class="xxlCard__content">
+                            <h2 class="xxlCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h2>
+
+                            <p class="xxlCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-5">
+                    <a href="article.html" class="sCard mCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/mCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <a href="article.html" class="sCard mCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/mCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <a href="article.html" class="sCard mCard">
+                        <div class="sCard__img backgrounedImg" style="background-image: url(../assets/images/mCard.jpg);"></div>
+
+                        <div class="sCard__content">
+                            <h5 class="sCard__title enhancedText">هند بنت مكتوم تنال جائزة المرأة العربية في العمل الإنساني لعام 2020</h5>
+                            <p class="sCard__text enhancedText">نالت حرم صاحب السمو الشيخ محمد بن راشد آل مكتوم نائب رئيس الدولة رئيس مجلس الوزراء حاكم دبي "رعاه الله"، سمو الشيخة هند بنت مكتوم بن جمعة آل مكتوم، رئيسة مجلس أمناء مؤسسة بنك الإمارات للطعام</p>
+                        </div>
+                    </a>
+
+                    <div class="nMore">
+                        <a href="advices-category.html">أخبار الصحة والجمال
+                            <span class="nMore__right"></span>
+                        <span class="nMore__left"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <li class="footer__item footer__facebook">
+                        <a href="#"><span class="flaticon-facebook flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__twitter">
+                        <a href="#"><span class="flaticon-twitter flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__instagram">
+                        <a href="#"><span class="flaticon-instagram flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__youtube">
+                        <a href="#"><span class="flaticon-youtube flaticon"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- external js -->
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/slick.js"></script>
+    <!-- my js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/sliders.js"></script>
+</body>
+
+</html>

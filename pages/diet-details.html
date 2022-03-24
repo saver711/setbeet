@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ست بيت - شرائح الخبز بالجبن والمايونيز</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/recipe.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="../assets/icons/flaticon.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images//icon-32.png">
+
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="../assets/images/icon-16.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/images//icon-32.ico">
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="container">
+        <nav class="nav">
+            <a href="../index.html" class="nav__logo"><img src="../assets/images/whole-logo.png" alt=""></a>
+
+            <div class="poster-nav poster-container__poster"></div>
+
+            <div class="nav__blocks">
+                <span class="nav__block nav__humburger">
+                    <span class="flaticon-menu flaticon"></span>
+                </span>
+                <span class="nav__block nav__search">
+                    <span class="flaticon-loupe flaticon"></span>
+                </span>
+                <a href="account.html" class="nav__block">
+                    <span class="flaticon-person-male-shape flaticon"></span>
+                </a>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- subNav -->
+    <div class="subNav sec-back">
+        <ul class="subNav__list">
+            <li class="subNav__item"><a href="../index.html">الرئيسية</a></li>
+            <li class="subNav__item"><a href="recipes.html">الوصفات</a></li>
+            <li class="subNav__item subMenu-parent">
+                <div>
+                    <span>
+                        قائمة منسدلة
+                    </span>
+                    <span class="flaticon-arrow-down-sign-to-navigate flaticon"></span>                </div>
+
+                <ul class="subMenu">
+                    <li class="subMenu__item"><a href="">الصفحة 1</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 2</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 3</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 4</a></li>
+                    <li class="subMenu__item"><a href="">الصفحة 5</a></li>
+                    <li class="subMenu__item">الصفحة 6</li>
+                </ul>
+            </li>
+
+            <li class="subNav__item"><a href="fav.html">التفضيلات</a></li>
+            <li class="subNav__item"><a href="diet.html">الريجيم</a></li>
+            <li class="subNav__item"><a href="news.html">الأخبار</a></li>
+            <li class="subNav__item"><a href="advices.html">نصائح ومقالات</a></li>
+        </ul>
+    </div>
+
+    <!-- search -->
+    <div class="search-container my-d-none">
+        <div class="container">
+            <div class="search">
+                <span class="flaticon-close flaticon search__close"></span>
+                <form action="">
+                    <input class="search__field" type="search" required placeholder="ابحث عن وصفة, خبر, مقال,...">
+                    <input type="submit" value="أبحث" class="search__submit main-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- recipes -->
+    <section class="recipes-container sec-padd">
+        <div class="container-fluid">
+            <div class="recipes">
+                <div class="customT">
+                    <h3 class="customT__title">رجيم الثلاثة أيام</h3>
+                    <p class="customT__subTitle">تخفيض الوزن 3 كيلو غرام</p>
+                </div>
+
+                <div class="recipes__table">
+                    <div class="recipes__main">
+                        <div class="description">
+                            <div class="description__header">
+                                <div class="description__header--content">
+                                    <div class="description__img backgrounedImg" style="background-image: url(../assets/images/viewed1.png);">
+                                        
+                                    </div>
+                                    <div class="description__label">
+                                            <ul class="recipe-card__stars">
+                                                <li class="recipe-card__star selected" data-value='1'>
+                                                    <span class="flaticon-star-sign flaticon"></span>
+                                                </li>
+        
+                                                <li class="recipe-card__star selected" data-value='2'>
+                                                    <span class="flaticon-star-sign flaticon"></span>
+                                                </li>
+        
+                                                <li class="recipe-card__star selected" data-value='3'>
+                                                    <span class="flaticon-star-sign flaticon"></span>
+                                                </li>
+        
+                                                <li class="recipe-card__star" data-value='4'>
+                                                    <span class="flaticon-star-sign flaticon"></span>
+                                                </li>
+        
+                                                <li class="recipe-card__star" data-value='5'>
+                                                    <span class="flaticon-star-sign flaticon"></span>
+                                                </li>
+                                            </ul>
+        
+                                            <div class="recipe-card__icons">
+                                                <div class="recipe-card__icon">
+                                                    <span class="flaticon-eye flaticon"></span>
+                                                    <p>354</p>
+                                                </div>
+        
+                                                <div class="recipe-card__icon">
+                                                    <span class="flaticon-clock flaticon"></span>
+                                                    <p>3 أيام</p>
+                                                </div>
+                                            </div>
+        
+    
+        
+                                        <div class="description__favBtn">
+                                            <span class="main-btn description__favBtn--button">
+                                                <span class="flat flaticon-heart-shaped-with-white-lining-detail flaticon"></span>
+                                                <span class="description__favBtn--text">اضافة للمفضلات</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="description__player">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/JgZjrPFifTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> -->
+
+                            <div class="description__intro">
+                                <fieldset>
+                                    <legend>مقدمة:</legend>
+                                    <p>يجب إتباع وصفة الرجيم بدون تغيير يمكن إعادة إتباع وصفة الرجيم بعد أربعة أيام مع المحافظة علي تقليل الأكل خلال الأربعة أيام.</p>
+                                </fieldset>
+                            </div>
+
+                            <div class="description__ingredients">
+                                <h3 class="description__title">اليوم الأول</h3>
+                                <div>
+                                    <fieldset>
+                                        <legend>فطار</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">نصف كوب عصير الجريب فروت</li>
+                                            <li class="description__item">قطعة واحدة خبز محمص (توست)</li>
+                                            <li class="description__item">1 ملعقة أكل زبد فول سوداني</li>
+                                            <li class="description__item">قهوة أو شاي بدون حليب</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+    
+                                    <fieldset>
+                                        <legend>غداء</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">نصف كوب تونا مع قطعة خبز محمص (توست)</li>
+                                            <li class="description__item">شريحتان من اللحم تزن 30 جرام</li>
+                                            <li class="description__item">كوب واحد فاصوليا خضراء مسلوقة</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+    
+                                    <fieldset>
+                                        <legend>عشاء</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">كوب جزر أو بنجر مسلوق</li>
+                                            <li class="description__item">تفاحة</li>
+                                            <li class="description__item">1 ملعقة أكل زبد فول سوداني</li>
+                                            <li class="description__item">كوب من أيس كريم الفانيلا</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="description__ingredients">
+                                <h3 class="description__title">اليوم الثاني</h3>
+                                <div>
+                                    <fieldset>
+                                        <legend>فطار</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">نصف كوب عصير الجريب فروت</li>
+                                            <li class="description__item">قطعة واحدة خبز محمص (توست)</li>
+                                            <li class="description__item">1 ملعقة أكل زبد فول سوداني</li>
+                                            <li class="description__item">قهوة أو شاي بدون حليب</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+    
+                                    <fieldset>
+                                        <legend>غداء</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">نصف كوب تونا مع قطعة خبز محمص (توست)</li>
+                                            <li class="description__item">شريحتان من اللحم تزن 30 جرام</li>
+                                            <li class="description__item">كوب واحد فاصوليا خضراء مسلوقة</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+    
+                                    <fieldset>
+                                        <legend>عشاء</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">كوب جزر أو بنجر مسلوق</li>
+                                            <li class="description__item">تفاحة</li>
+                                            <li class="description__item">1 ملعقة أكل زبد فول سوداني</li>
+                                            <li class="description__item">كوب من أيس كريم الفانيلا</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="description__ingredients">
+                                <h3 class="description__title">اليوم الثالث</h3>
+                                <div>
+                                    <fieldset>
+                                        <legend>فطار</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">نصف كوب عصير الجريب فروت</li>
+                                            <li class="description__item">قطعة واحدة خبز محمص (توست)</li>
+                                            <li class="description__item">1 ملعقة أكل زبد فول سوداني</li>
+                                            <li class="description__item">قهوة أو شاي بدون حليب</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+    
+                                    <fieldset>
+                                        <legend>غداء</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">نصف كوب تونا مع قطعة خبز محمص (توست)</li>
+                                            <li class="description__item">شريحتان من اللحم تزن 30 جرام</li>
+                                            <li class="description__item">كوب واحد فاصوليا خضراء مسلوقة</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+    
+                                    <fieldset>
+                                        <legend>عشاء</legend>
+    
+                                        <ul class="description__list">
+                                            <li class="description__item">كوب جزر أو بنجر مسلوق</li>
+                                            <li class="description__item">تفاحة</li>
+                                            <li class="description__item">1 ملعقة أكل زبد فول سوداني</li>
+                                            <li class="description__item">كوب من أيس كريم الفانيلا</li>
+                                        </ul>
+                                        
+                                    </fieldset>
+                                </div>
+
+                                
+                            </div>
+
+
+
+                            <div class="description__writer">
+                                <span class="flaticon-star-sign flaticon"></span>
+                                <span>كتابة: </span>
+                                <a href="#">صفاء محمد</a>
+                            </div>
+
+                            <!-- <div class="description__tags">
+                                <a href="recipes-category.html" class="description__tag">
+                                    <span class="flaticon-star-sign flaticon"></span>
+                                    <span>الأسماك</span>
+                                </a>
+
+                                <a href="recipes-country.html" class="description__tag">
+                                    <span class="flaticon-star-sign flaticon"></span>
+                                    <span>وصفات مصرية</span>
+                                </a>
+                            </div>
+                            <hr> -->
+
+                            <div class="comments">
+                                <h4 class="comments__header">التعليقات</h4>
+                                <div class="comment">
+                                    <div class="comment__right">
+                                        <div class="comment__img">
+                                            <img src="../assets/images/person.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="comment__left">
+                                        <a href="#" class="comment__userName">أحمد أحمد عبد الحميد</a>
+                                        <span class="comment__date">منذ 4 أشهر</span>
+
+                                        <ul class="recipe-card__stars">
+                                            <li class="recipe-card__star selected" data-value='1'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star selected" data-value='2'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star selected" data-value='3'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star selected" data-value='4'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star" data-value='5'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+                                        </ul>
+
+                                        <p class="comment__text">تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيدتسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد</p>
+                                    </div>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="comment__right">
+                                        <div class="comment__img">
+                                            <img src="../assets/images/person.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="comment__left">
+                                        <a href="#" class="comment__userName">أحمد أحمد عبد الحميد</a>
+                                        <span class="comment__date">منذ 4 أشهر</span>
+
+                                        <p class="comment__text">تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيدتسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد</p>
+                                    </div>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="comment__right">
+                                        <div class="comment__img">
+                                            <img src="../assets/images/person.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="comment__left">
+                                        <a href="#" class="comment__userName">أحمد أحمد عبد الحميد</a>
+                                        <span class="comment__date">منذ 4 أشهر</span>
+
+                                        
+
+                                        <p class="comment__text">تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد تسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيدتسلم ايديك والله التطبيق أكثر من رائع وإن شاء الله نتوقع المزيد</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="comments__header">اضافة تعليق وتقييم</h4>
+                                <form action="" class="commentForm">
+                                    <div>
+                                        <textarea name="" id="" placeholder="أكتب تعليقك هنا"></textarea>
+
+                                    <div class="commentForm__rating">
+                                        <h6>تقييم الوصفة</h6>
+                                        <ul class="recipe-card__stars">
+                                            <li class="recipe-card__star" data-value='1'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star" data-value='2'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star" data-value='3'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star" data-value='4'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+    
+                                            <li class="recipe-card__star" data-value='5'>
+                                                <span class="flaticon-star-sign flaticon"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+
+                                    <input class="commentForm__submit main-btn" type="submit" value="اضافة تعليق">
+                                </form>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <aside class="recipes__side">
+                        <h4 class="recipes__side--title">نصائح ومقالات ذات صلة</h4>
+                        <div class="recipes__side--blocks">
+                            <a href="article.html" class="recipes__side--block">
+                                <div class="recipes__side--img backgrounedImg"
+                                    style="background-image: url(../assets/images/side1.png);">
+
+                                </div>
+
+                                <p class="recipes__side--content">
+                                    هل يمكن أن أحمل وأنا أقوم بالرضاعة الطبيعية؟
+                                </p>
+                            </a>
+
+                            <a href="article.html" class="recipes__side--block">
+                                <div class="recipes__side--img backgrounedImg"
+                                    style="background-image: url(../assets/images/side1.png);">
+
+                                </div>
+
+                                <p class="recipes__side--content">
+                                    هل يمكن أن أحمل وأنا أقوم بالرضاعة الطبيعية؟
+                                </p>
+                            </a>
+
+                            <a href="article.html" class="recipes__side--block">
+                                <div class="recipes__side--img backgrounedImg"
+                                    style="background-image: url(../assets/images/side1.png);">
+
+                                </div>
+
+                                <p class="recipes__side--content">
+                                    هل يمكن أن أحمل وأنا أقوم بالرضاعة الطبيعية؟
+                                </p>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <li class="footer__item footer__facebook">
+                        <a href=""><span class="flaticon-facebook flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__twitter">
+                        <a href=""><span class="flaticon-twitter flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__instagram">
+                        <a href=""><span class="flaticon-instagram flaticon"></span></a>
+                    </li>
+
+                    <li class="footer__item footer__youtube">
+                        <a href=""><span class="flaticon-youtube flaticon"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- external js -->
+    <script src="../js/jquery-3.5.1.js"></script>
+
+    <!-- my js -->
+    <script src="../js/common.js"></script>
+</body>
+
+</html>
